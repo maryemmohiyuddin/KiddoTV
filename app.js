@@ -19,7 +19,6 @@ app.get('/', (req, res) => {
     headerContent: 'Header Content Here'
   });
 });
-
 app.get('/fredokacomicneue', (req, res) => {
   res.render('fredokacomicneue', { title: 'Fredoka Comicneue' });
 });
@@ -87,3 +86,5 @@ app.get('/fredokaMonserrat', (req, res) => {
 app.listen(3002, () => {
   console.log('Server is running on http://localhost:3002');
 });
+module.exports = app;
+
