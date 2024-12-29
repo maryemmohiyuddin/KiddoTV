@@ -5,12 +5,26 @@
 
 </head>
 <body>
-    <%- include('options') %> 
     <%- include('navbar2') %> 
 
-    <!-- <%- include('video') %>  -->
+    <%- include('video') %> 
     <%- include('footer2') %> 
     <dtyle>
     </dtyle>
+        <script>
+
+const video = document.getElementById("myVideo");
+  const playPauseBtn = document.getElementById("playPauseBtn");
+
+  playPauseBtn.addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+      playPauseBtn.innerHTML = "&#10074;&#10074;"; // Pause icon
+    } else {
+      video.pause();
+      playPauseBtn.innerHTML = "&#9658;"; // Play icon
+    }
+  });
+        </script>
 </body>
 </html>
